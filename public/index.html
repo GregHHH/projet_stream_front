@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="js/script.js"></script>
+		<title>projet Stream</title>
+	</head>
+	<body>
+		<div class="main-container">
+			<header class="main-header">
+				<h1 class ="Distordre">Distordre</h1>
+			</header>
+			<main class="main-page">
+				<form action="chat.html">
+					<div class="main-login                               ">
+						<label for="pseudo">Pseudo</label>
+						<input type="text" name="pseudo" id="pseudo" placeholder="Entrer Pseudo" required />
+					</div>
+					<div class="main-login                                                             ">
+						<label for="room">Salons disponibles</label>
+						<select name="room" id="room">
+							<option value="General">General</option>
+							<option value="Projets">Projets</option>
+							<option value="Gestion">Gestion</option>
+							<option value="Memes">Dank Memes</option>
+						</select>
+					</div>
+					<button type="submit" class="btn">Rejoindre la salle</button>
+					<br>
+				</form>
+				<input type="text" name="newRoom" id="newRoom" placeholder="Nouveau salon" />
+				<button class="btn"onclick="add_Room()">Creer salle</button>
+			</main>
+		</div>
+	</body>
+</html>

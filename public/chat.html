@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Projet Stream</title>
+  </head>
+  <body>
+    <div class="chat-container">
+      <header class="chat-header">
+        <h1> Distordre</h1>
+        <a id="leave-btn" class="btn">Quitter</a>
+      </header>
+      <main class="chat-main">
+        <div class="chat-sidebar">
+          <h3>Nom de la Salle</h3>
+          <h2 id="room-name"></h2>
+          <h3>Utilisateurs connectés: </h3>
+          <ul id="users"></ul>
+        </div>
+        <div class="chat-messages"></div>
+      </main>
+      <div class="chat-input-container">
+        <form id="chat-input">
+          <input id="msg" type="text" placeholder="Envoyer message à ${roomUsers}" required autocomplete="off" />
+          <button class="btn">Envoyer</button>
+        </form>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js" integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="  crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
